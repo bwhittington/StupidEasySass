@@ -1,0 +1,53 @@
+﻿//declaring font-face
+$global-font-family: "HelveticaNeue";
+$global-font-style: normal;
+$global-font-src: 'local("Helvetica Neue"), url("../fonts/HelveticaNeue.ttf") format("truetype")';
+
+@font-face {
+    font-family: $global-font-family;
+    font-style: $global-font-style;
+    src: $global-font-src;
+}
+
+// using your font-face
+@mixin Helvetica-Neue {
+    font-family: "HelveticaNeue", HelveticaNeue, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin Helvetica-Neue-Italic {
+    font-family: "HelveticaNeue", HelveticaNeue, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin Helvetica-Neue-Bold {
+    font-family: "HelveticaNeue", HelveticaNeue, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin Helvetica-Neue-Bold-Italic {
+    font-family: "HelveticaNeue", HelveticaNeue, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.heavy {
+    font-weight: 600 !important;
+}
+
+// font sizes
+$font-size-small: 1vmin;
+$font-size-regular: 2vmin;
+$font-size-large: 3vmin;
+$font-size-x-large: 4vmin;
+$font-size-xx-large: 5vmin;
+$font-size-xxx-large: 6vmin;
+
+$font-size-item-title: 2.5vmin;
+$font-size-title: 3.2vmin;
+$font-size-description: 2.5vmin;
+$font-size-disclaimer: 1vmin;
+
